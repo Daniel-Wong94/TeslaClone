@@ -157,3 +157,22 @@ p a,
 .order-anchors a:first-of-type span {
   color: #ffffff;
 }
+
+footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links {
+  position: absolute;
+  bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links li {
+  list-style: none;
+  display: inline-block;
+  margin: 6px;
+}
