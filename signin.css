@@ -92,7 +92,7 @@ form fieldset div input {
   border: none;
   border-radius: 32px;
   background-color: #f5f5f5;
-  padding-inline: 0 20px;
+  padding: 0 20px;
 }
 
 form fieldset div button {
@@ -104,6 +104,13 @@ form fieldset div button {
   color: #ffffff;
   text-transform: uppercase;
   font-size: 12px;
+}
+
+.language-selector a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid pink; */
 }
 
 .submit-btn {
@@ -134,7 +141,7 @@ form fieldset div button {
 
 .forgot a {
   color: #393c41;
-  text-decoration: none;
+  /* text-decoration: none; */
   display: inline;
 }
 
@@ -192,4 +199,18 @@ footer {
   width: 40%;
   background-color: #e2e4e4;
   content: "";
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #d8d9da;
+}
+
+.submit-btn button:hover {
+  background-color: #3457b2;
+}
+
+#create-account:hover {
+  background-color: #181b21;
+  color: #ffffff;
 }
