@@ -8,6 +8,7 @@
 
 body {
   font-family: "Be Vietnam Pro", sans-serif;
+  position: relative;
 }
 
 .images-container {
@@ -26,6 +27,9 @@ section {
   background-position: center center;
   background-size: cover;
   scroll-snap-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .model-s {
@@ -59,8 +63,8 @@ section {
 
 header {
   position: absolute;
-  border: 2px red solid;
   width: 100%;
+  z-index: 1000;
 }
 
 .logo-container {
@@ -77,6 +81,7 @@ nav {
   align-items: center;
   height: 48px;
   padding: 0 32px;
+  color: ##181b21;
 }
 
 nav ul li {
@@ -88,4 +93,22 @@ nav ul li {
 
 nav ul li {
   padding: 4px 8px;
+}
+
+.model-heading {
+  position: absolute;
+  border: 2px solid red;
+  top: 14%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  color: #393c41;
+}
+
+p,
+p a {
+  font-size: 14px;
+  color: #5c5d61;
 }
