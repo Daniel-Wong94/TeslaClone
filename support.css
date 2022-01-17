@@ -10,10 +10,13 @@
 body {
   font-family: "Be Vietnam Pro", sans-serif;
   position: relative;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-header {
-  position: absolute;
+.primary-header {
   width: 100%;
   z-index: 1000;
   top: 0;
@@ -26,7 +29,7 @@ header {
   align-items: center;
 }
 
-nav {
+.primary-nav {
   /* border: 2px blue solid; */
   display: flex;
   justify-content: space-between;
@@ -36,7 +39,8 @@ nav {
   color: #181b21;
 }
 
-nav ul li {
+.primary-nav ul li,
+.support-nav li {
   display: inline-block;
   list-style: none;
   font-size: 14px;
@@ -44,8 +48,97 @@ nav ul li {
   padding: 4px 8px;
 }
 
-nav li a,
-nav a {
+li {
+  list-style-position: inside;
+  margin: 8px 0;
+}
+
+header a {
   text-decoration: none;
   color: inherit;
+}
+
+main {
+  width: 66%;
+  /* border: 1px solid green; */
+  padding-bottom: 40px;
+}
+
+.left-article {
+  float: left;
+  width: 100%;
+  max-width: 672px;
+}
+
+footer {
+  width: 100%;
+  border: 1px solid pink;
+}
+
+.secondary-header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 34px;
+  margin-bottom: 22px;
+  line-height: 34px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #171a20;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+h3,
+.left-article ul li,
+.left-article ol li {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.left-article ul li,
+.left-article ul li a,
+.left-article ol li,
+.left-article ol li a {
+  font-weight: 400;
+  color: #5c5e62;
+}
+
+.left-article ul li,
+.left-article ol li {
+  padding-inline-start: 40px;
+}
+p {
+  margin: 22px 0;
+  font-size: 14px;
+  color: #393c41;
+  font-weight: 400px;
+  line-height: 21px;
+}
+
+.secondary-header h1,
+.secondary-header ul {
+  display: inline-block;
+  /* border: 1px solid orange; */
+}
+
+.support-nav li {
+  font-size: 13px;
+  /* border: 1px solid purple; */
+}
+
+.secondary-header {
+  border-bottom: #e2e4e4 1px solid;
+  margin-bottom: 100px;
+  padding-top: 45px;
+}
+
+.ordering-video {
+  width: 100%;
 }
