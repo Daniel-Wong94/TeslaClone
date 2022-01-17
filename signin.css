@@ -181,6 +181,11 @@ footer {
   padding: 4px 8px;
 }
 
+.footer-links li a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* creates the thin line around "OR" span */
 
 .lines::before {
