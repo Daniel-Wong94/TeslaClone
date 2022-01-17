@@ -10,6 +10,9 @@
 body {
   font-family: "Be Vietnam Pro", sans-serif;
   position: relative;
+  /* border: 1px solid red; */
+  width: 100vw;
+  height: 100vh;
 }
 
 header {
@@ -17,4 +20,176 @@ header {
   width: 100%;
   z-index: 1000;
   top: 0;
+}
+
+nav {
+  /* border: 2px blue solid; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  padding: 0 32px;
+  color: #181b21;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px 8px;
+}
+
+nav li a,
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* border: 4px solid green; */
+}
+
+form {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  padding: 0 8px 0 20px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #393c41;
+}
+
+legend {
+  display: block;
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+
+form fieldset div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 8px 0;
+}
+
+form fieldset div input {
+  height: 40px;
+  width: 332px;
+  border: none;
+  border-radius: 32px;
+  background-color: #f5f5f5;
+  padding-inline: 0 20px;
+}
+
+form fieldset div button {
+  height: 40px;
+  width: 332px;
+  border: none;
+  border-radius: 20px;
+  background-color: #3d69e1;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.submit-btn {
+  margin: 8px 0;
+  padding: 0;
+}
+
+#create-account {
+  background-color: #ffffff;
+  border: 3px solid #181b21;
+  color: #181b21;
+}
+
+.forgot {
+  display: flex;
+  /* border: 2px solid purple; */
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  flex-direction: row;
+  margin-top: 16px;
+}
+
+.forgot span {
+  padding: 0 7px;
+  font-size: 14px;
+}
+
+.forgot a {
+  color: #393c41;
+  text-decoration: none;
+  display: inline;
+}
+
+.logo-container {
+  height: 30px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.lines {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin: 40px 0;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links {
+  position: absolute;
+  bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #5c5d61;
+}
+
+.footer-links li {
+  list-style: none;
+  display: inline-block;
+  padding: 4px 8px;
+}
+
+/* creates the thin line around "OR" span */
+
+.lines::before {
+  display: block;
+  height: 1px;
+  margin: 0 8px;
+  width: 40%;
+  background-color: #e2e4e4;
+  content: "";
+}
+
+.lines::after {
+  display: block;
+  height: 1px;
+  margin: 0 8px;
+  width: 40%;
+  background-color: #e2e4e4;
+  content: "";
 }
