@@ -1,3 +1,5 @@
+/* start of reset and font */
+
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400&display=swap");
 
 * {
@@ -16,6 +18,7 @@ body {
   align-items: center;
 }
 
+/* start of navigation bar */
 .primary-header {
   width: 100%;
   z-index: 1000;
@@ -57,6 +60,8 @@ header a {
   text-decoration: none;
   color: inherit;
 }
+
+/* start of main */
 
 main {
   width: 66%;
@@ -158,23 +163,54 @@ p {
 
 footer {
   width: 100%;
-  padding: 30px 30px 32px;
+  padding: 30px 0;
   background-color: #393c41;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  /* border: 1px solid blue; */
+  width: 66%;
+  /* display: flex; */
 }
 
 .footer-upper {
-  /* border: 2px solid red; */
+  /* border: 2px solid pink; */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.maps-container {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  width: 100%;
+  max-width: 672px;
+}
+
+.maps-container div {
+  display: inline;
+  /* border: 1px solid green; */
+  justify-content: center;
+}
+
+.maps-container div span {
+  display: block;
+  font-size: 13px;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .footer-links {
   display: flex;
   align-items: flex-start;
-  border: 1px solid red;
+  /* border: 1px solid orange; */
 }
 
-.footer-links ul li a {
+.footer-links ul li a,
+.copyright span {
   text-decoration: none;
   font-size: 13px;
   color: #ffffff;
@@ -183,11 +219,15 @@ footer {
 .left-ul,
 .right-ul {
   list-style-type: none;
-  display: inline-block;
-  border: 2px solid blue;
+  display: block;
+  /* border: 2px solid blue; */
   font-weight: 400;
+  padding: 0 20px;
 }
 
-/* .empty-content::after {
-  content: "";
-} */
+.footer-lower {
+  /* border: 1px solid green; */
+  padding: 20px 0;
+  font-size: 13px;
+  width: 100%;
+}
