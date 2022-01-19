@@ -1,0 +1,84 @@
+/* removes double y axis scrollbar and keeps functionality */
+.images-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* start of full view scroll snap feature*/
+.images-container {
+  scroll-snap-type: y proximity;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  background-position: center center;
+  background-size: cover;
+  scroll-snap-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+/* end of full view scroll snap feature */
+
+/* start - container for h1  */
+.model-heading {
+  position: absolute;
+  top: 14%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  color: #393c41;
+  padding: 4px 0;
+}
+
+.product-description,
+.product-description a {
+  color: #5c5d61;
+  font-size: 14px;
+  padding: 4px 0;
+}
+/* end - container for h1 */
+
+/* start - ordering buttons div */
+.order-anchors {
+  position: absolute;
+  bottom: 10%;
+  display: flex;
+  /* border: 2px red solid; */
+}
+
+.order-anchors a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 40px;
+  margin: 10px;
+  padding: 4px 24px;
+  background-color: #ffffffa6;
+  border-radius: 32px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.order-anchors a:first-of-type {
+  background-color: #171a20cc;
+}
+
+.order-anchors a:first-of-type span {
+  color: #ffffff;
+}
+
+.order-anchors a span {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #393c41;
+}
+
+/* end - ordering buttons div */
