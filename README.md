@@ -16,3 +16,10 @@ First attempt at cloning webpages with just HTML and CSS.
 - Animations on page load
 - Animated button focus
 - Button disappearing on scroll
+- Carousel for shop items
+
+## To Do's:
+
+- Clean up code
+- Apply React
+- Fix FOUC issue
